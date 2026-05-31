@@ -34,30 +34,25 @@ communication, conceptual exploration, and portfolio development.
 
 ## Installation
 
-\`\`\`{r installation, eval=FALSE} if (!requireNamespace(“remotes”,
-quietly = TRUE)) { install.packages(“remotes”) }
+``` r
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
 
-remotes::install_github(“NoushinN/consciousnessModelR”)
+remotes::install_github("NoushinN/consciousnessModelR")
+```
 
-    ## Quick example
+## Quick example
 
-    ```{r quick-example, eval=FALSE}
-    library(consciousnessModelR)
+\`\`\`{r quick-example, eval=FALSE} library(consciousnessModelR)
 
-    sim <- simulate_global_workspace(
-      n_processes = 8,
-      steps = 100,
-      seed = 123
-    )
+sim \<- simulate_global_workspace( n_processes = 8, steps = 100, seed =
+123 )
 
-    head(sim)
+head(sim)
 
-    plot_consciousness_sim(
-      sim,
-      x = "step",
-      y = "activation",
-      group = "process"
-    )
+plot_consciousness_sim( sim, x = “step”, y = “activation”, group =
+“process” ) \`\`\`
 
 ## Package structure
 

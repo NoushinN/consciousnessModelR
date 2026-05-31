@@ -29,7 +29,7 @@ This package **does not detect, measure, or create real consciousness**. The mod
 
 ## Installation
 
-```{r installation, eval=FALSE}
+```r
 if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
