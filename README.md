@@ -39,7 +39,7 @@ remotes::install_github("NoushinN/consciousnessModelR")
 
 ## Quick example
 
-```{r quick-example, eval=FALSE}
+```r
 library(consciousnessModelR)
 
 sim <- simulate_global_workspace(
