@@ -1,0 +1,1 @@
+test_that("simulate_information_integration returns summary", { sim <- simulate_information_integration(steps = 5, seed = 1); expect_true(is.list(sim)); expect_s3_class(sim$summary, "data.frame"); expect_true("integration_score" %in% names(sim$summary)) })

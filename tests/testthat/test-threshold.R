@@ -1,0 +1,1 @@
+test_that("consciousness_threshold adds threshold columns", { sim <- simulate_global_workspace(steps = 5, seed = 1); out <- consciousness_threshold(sim); expect_true("above_threshold" %in% names(out)); expect_true("threshold_distance" %in% names(out)) })

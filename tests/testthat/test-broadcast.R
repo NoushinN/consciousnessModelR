@@ -1,0 +1,1 @@
+test_that("broadcast_network returns list with time series", { sim <- broadcast_network(steps = 5, seed = 1); expect_true(is.list(sim)); expect_s3_class(sim$time_series, "data.frame"); expect_true(is.matrix(sim$adjacency_matrix)) })

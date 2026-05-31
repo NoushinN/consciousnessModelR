@@ -1,0 +1,19 @@
+articles:
+- title: Start here
+  navbar: ~
+  contents:
+  - getting-started
+
+- title: Theoretical guide
+  contents:
+  - what-is-consciousness
+  - global-workspace-theory
+  - attention-and-competition
+  - information-integration-theory
+  - broadcast-and-access
+  - threshold-models
+
+- title: Synthesis and responsible use
+  contents:
+  - comparing-consciousness-theories
+  - limitations-and-responsible-use

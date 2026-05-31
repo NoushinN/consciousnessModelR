@@ -1,0 +1,55 @@
+---
+title: "Limitations and Responsible Use"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Limitations and Responsible Use}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r load-package}
+library(consciousnessModelR)
+```
+
+
+## Why this matters
+
+Computational models of consciousness can be misleading if presented too strongly.
+
+The functions in `consciousnessModelR` are toy educational models. They are designed to help learners compare theory structures, not to evaluate real minds.
+
+## What the package does not do
+
+The package does not:
+
+- Detect consciousness
+- Measure subjective experience
+- Diagnose cognitive states
+- Determine whether AI systems are conscious
+- Represent detailed brain physiology
+- Resolve the hard problem of consciousness
+
+## Responsible interpretation
+
+A simulation may show competition, broadcast, integration, threshold crossing, or network activation. These are formal patterns, not proof of conscious experience.
+
+## Educational value
+
+The models are useful because they make abstract ideas concrete.
+
+Students can ask:
+
+- What assumptions does each theory make?
+- What variables matter?
+- What outputs would count as evidence?
+- What is missing from the model?
+- How could the model be improved?
+
+## Suggested readings
+
+For broader philosophical and scientific context, see Chalmers, Seth, Baars, Dehaene, and Tononi [@chalmers1996conscious; @seth2018consciousness; @baars1988cognitive; @dehaene2014consciousness; @tononi2004integrated].

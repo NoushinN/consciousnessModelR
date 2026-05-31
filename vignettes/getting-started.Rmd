@@ -1,0 +1,68 @@
+---
+title: "Getting Started with consciousnessModelR"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Getting Started with consciousnessModelR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r load-package}
+library(consciousnessModelR)
+```
+
+
+## Overview
+
+`consciousnessModelR` provides simplified simulations for teaching major ideas in consciousness studies.
+
+The package focuses on educational clarity. It does not attempt to measure or produce consciousness.
+
+The central learning question is:
+
+> How can different theories of consciousness be represented as simple computational models?
+
+## Main ideas
+
+The package includes models inspired by:
+
+- Global Workspace Theory
+- Attention competition
+- Broadcast dynamics
+- Information integration
+- Threshold models of awareness-like processing
+
+## A first simulation
+
+```{r first-simulation}
+sim <- simulate_global_workspace(n_processes = 8, steps = 100, seed = 123)
+head(sim)
+```
+
+## Plot activation through time
+
+```{r first-plot}
+plot_consciousness_sim(sim, x = "step", y = "activation", group = "process")
+```
+
+## Apply a threshold
+
+```{r first-threshold}
+thresholded <- consciousness_threshold(sim, activation_col = "activation", threshold = 0.7)
+head(thresholded)
+```
+
+## Interpretation
+
+In this toy model, several processes compete for access. A process with sufficiently high activation may cross a threshold and become globally broadcast.
+
+This is an educational representation of one idea from Global Workspace Theory, not a model of real subjective experience.
+
+## Suggested reading
+
+Global Workspace Theory was developed by Baars and later expanded in cognitive neuroscience by Dehaene and colleagues [@baars1988cognitive; @dehaene2011experimental; @dehaene2014consciousness].

@@ -1,0 +1,47 @@
+---
+title: "Broadcast Network Simulation"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Broadcast Network Simulation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r load-package}
+library(consciousnessModelR)
+```
+
+
+## Theory background
+
+In global workspace models, a selected signal becomes widely available to multiple systems.
+
+`broadcast_network()` represents this idea using a simple network.
+
+## Run the model
+
+```{r broadcast-model}
+net <- broadcast_network(n_nodes = 12, steps = 60, source_node = 1, connection_probability = 0.25, seed = 7)
+head(net$time_series)
+```
+
+## View network structure
+
+```{r adjacency}
+net$adjacency_matrix
+```
+
+## Plot activation spread
+
+```{r broadcast-plot}
+plot_consciousness_sim(net$time_series, x = "step", y = "activation", group = "node")
+```
+
+## Interpretation
+
+More connected networks tend to spread activation more broadly. Sparse networks may isolate activation in a small part of the system.

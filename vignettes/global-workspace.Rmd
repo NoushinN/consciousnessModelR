@@ -1,0 +1,54 @@
+---
+title: "Global Workspace Simulation"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Global Workspace Simulation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r load-package}
+library(consciousnessModelR)
+```
+
+
+## Theory background
+
+Global Workspace Theory proposes that conscious access involves information becoming globally available to many specialized systems.
+
+In simple terms:
+
+1. Many processes operate locally.
+2. They compete for attention.
+3. One signal may become dominant.
+4. The winning signal is broadcast to the wider system.
+
+## Run the simulation
+
+```{r gw-simulation}
+gw <- simulate_global_workspace(n_processes = 10, steps = 120, noise = 0.1, ignition_threshold = 0.75, seed = 10)
+head(gw)
+```
+
+## Visualize activation
+
+```{r gw-plot}
+plot_consciousness_sim(gw, x = "step", y = "activation", group = "process")
+```
+
+## Inspect winning processes
+
+```{r gw-winners}
+table(gw$winner)
+```
+
+## Interpretation
+
+A process is treated as entering the workspace when it has the highest activation and crosses the ignition threshold.
+
+Low thresholds make broadcast easier. High thresholds make broadcast rarer.

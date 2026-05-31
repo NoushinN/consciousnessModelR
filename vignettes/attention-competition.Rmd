@@ -1,0 +1,47 @@
+---
+title: "Attention Competition Model"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Attention Competition Model}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r load-package}
+library(consciousnessModelR)
+```
+
+
+## Theory background
+
+Attention can be understood as a selection process.
+
+Signals may compete based on salience, novelty, goal relevance, and noise.
+
+## Run the model
+
+```{r attention-model}
+attn <- attention_competition_model(n_signals = 6, steps = 100, weights = c(0.4, 0.3, 0.3), seed = 22)
+head(attn)
+```
+
+## Which signals were selected?
+
+```{r selected-signals}
+table(attn$selected_signal)
+```
+
+## Plot priorities
+
+```{r priority-plot}
+plot_consciousness_sim(attn, x = "step", y = "priority", group = "signal")
+```
+
+## Interpretation
+
+Changing weights changes the basis of competition. A salience-dominated system responds strongly to intense signals, while a goal-dominated system prioritizes task relevance.

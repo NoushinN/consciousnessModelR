@@ -1,0 +1,1 @@
+test_that("simulate_global_workspace returns expected columns", { sim <- simulate_global_workspace(steps = 5, seed = 1); expect_s3_class(sim, "data.frame"); expect_true(all(c("step", "process", "activation", "winner", "ignited") %in% names(sim))) })

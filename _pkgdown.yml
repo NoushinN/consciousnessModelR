@@ -1,0 +1,103 @@
+url: https://noushinn.github.io/consciousnessModelR/
+
+template:
+  bootstrap: 5
+  extra_css: pkgdown/extra.css
+navbar:
+  structure:
+    left:  [intro, reference, code_tutorials, theory_guide]
+    right: [github]
+
+  components:
+    code_tutorials:
+      text: "Code Tutorials"
+      menu:
+      - text: "Getting Started"
+        href: articles/getting-started.html
+      - text: "Global Workspace Simulation"
+        href: articles/global-workspace.html
+      - text: "Attention Competition"
+        href: articles/attention-competition.html
+      - text: "Broadcast Network"
+        href: articles/broadcast-network.html
+      - text: "Information Integration"
+        href: articles/information-integration.html
+      - text: "Threshold Models"
+        href: articles/consciousness-threshold.html
+      - text: "Comparing Theories"
+        href: articles/comparing-theories.html
+      - text: "Limitations and Ethics"
+        href: articles/limitations-and-ethics.html
+
+    theory_guide:
+      text: "Theory Guide"
+      menu:
+      - text: "What Is Consciousness?"
+        href: articles/what-is-consciousness.html
+      - text: "Global Workspace Theory"
+        href: articles/global-workspace-theory.html
+      - text: "Attention and Competition"
+        href: articles/attention-and-competition.html
+      - text: "Information Integration"
+        href: articles/information-integration-theory.html
+      - text: "Broadcast and Access"
+        href: articles/broadcast-and-access.html
+      - text: "Threshold Models"
+        href: articles/threshold-models.html
+      - text: "Comparing Consciousness Theories"
+        href: articles/comparing-consciousness-theories.html
+      - text: "Limitations and Responsible Use"
+        href: articles/limitations-and-responsible-use.html
+
+    github:
+      icon: fab fa-github
+      href: https://github.com/NoushinN/consciousnessModelR
+      aria-label: GitHub
+
+home:
+  title: consciousnessModelR
+  description: Educational simulations for consciousness theories.
+  links:
+  - text: Source code
+    href: https://github.com/NoushinN/consciousnessModelR
+  - text: Report an issue
+    href: https://github.com/NoushinN/consciousnessModelR/issues
+
+articles:
+- title: Code Tutorials
+  contents:
+  - getting-started
+  - global-workspace
+  - attention-competition
+  - broadcast-network
+  - information-integration
+  - consciousness-threshold
+  - comparing-theories
+  - limitations-and-ethics
+
+- title: Theory Guide
+  contents:
+  - what-is-consciousness
+  - global-workspace-theory
+  - attention-and-competition
+  - information-integration-theory
+  - broadcast-and-access
+  - threshold-models
+  - comparing-consciousness-theories
+  - limitations-and-responsible-use
+
+reference:
+- title: Global workspace and attention
+  contents:
+  - simulate_global_workspace
+  - attention_competition_model
+  - broadcast_network
+
+- title: Integration and threshold models
+  contents:
+  - simulate_information_integration
+  - consciousness_threshold
+
+- title: Visualization
+  contents:
+  - plot_consciousness_sim

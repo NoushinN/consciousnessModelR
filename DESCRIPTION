@@ -1,0 +1,35 @@
+Package: consciousnessModelR
+Title: Educational Simulations for Consciousness Theories
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Noushin",
+        family = "Nabavi",
+        role = c("aut", "cre"),
+        email = "37668936+NoushinN@users.noreply.github.com"
+    )
+Description: Provides simplified educational simulations for exploring major
+    consciousness theories, including global workspace theory, information
+    integration, attention competition, broadcast dynamics, and threshold-based
+    models of awareness-like processing. The package is intended for teaching,
+    science communication, conceptual exploration, and portfolio development.
+    It does not measure or detect real consciousness.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R (>= 4.3.0)
+Imports:
+    ggplot2,
+    stats,
+    utils,
+    rlang
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/NoushinN/consciousnessModelR, https://noushinn.github.io/consciousnessModelR/
+BugReports: https://github.com/NoushinN/consciousnessModelR/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0

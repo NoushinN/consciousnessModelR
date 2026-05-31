@@ -1,0 +1,1 @@
+test_that("attention_competition_model returns expected columns", { sim <- attention_competition_model(steps = 5, seed = 1); expect_s3_class(sim, "data.frame"); expect_true(all(c("step", "signal", "priority", "selected_signal") %in% names(sim))) })

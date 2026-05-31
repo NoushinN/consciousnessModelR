@@ -1,0 +1,41 @@
+---
+title: "Threshold Models of Awareness-like Processing"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Threshold Models of Awareness-like Processing}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r load-package}
+library(consciousnessModelR)
+```
+
+## Theory background
+
+Some theories describe conscious access as threshold-like.
+
+A stimulus may remain subliminal if activation is weak, but become reportable or globally available if activation crosses a threshold.
+
+## Run and apply threshold
+
+```{r threshold-sim}
+sim <- simulate_global_workspace(seed = 3, ignition_threshold = 0.75)
+thresholded <- consciousness_threshold(sim, activation_col = "activation", threshold = 0.70)
+head(thresholded)
+```
+
+## Count threshold crossings
+
+```{r threshold-count}
+table(thresholded$above_threshold)
+```
+
+## Interpretation
+
+Rows above the threshold represent signals that meet a simplified criterion for awareness-like processing. This is not a claim about subjective experience.
