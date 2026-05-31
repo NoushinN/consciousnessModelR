@@ -1,0 +1,24 @@
+pandoc: '3.2'
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  attention-and-competition: attention-and-competition.html
+  attention-competition: attention-competition.html
+  broadcast-and-access: broadcast-and-access.html
+  broadcast-network: broadcast-network.html
+  comparing-consciousness-theories: comparing-consciousness-theories.html
+  comparing-theories: comparing-theories.html
+  consciousness-threshold: consciousness-threshold.html
+  getting-started: getting-started.html
+  global-workspace-theory: global-workspace-theory.html
+  global-workspace: global-workspace.html
+  information-integration-theory: information-integration-theory.html
+  information-integration: information-integration.html
+  limitations-and-ethics: limitations-and-ethics.html
+  limitations-and-responsible-use: limitations-and-responsible-use.html
+  threshold-models: threshold-models.html
+  what-is-consciousness: what-is-consciousness.html
+last_built: 2026-05-31T03:53Z
+urls:
+  reference: https://noushinn.github.io/consciousnessModelR/reference
+  article: https://noushinn.github.io/consciousnessModelR/articles
