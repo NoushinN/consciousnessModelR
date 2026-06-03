@@ -1,3 +1,5 @@
+<img src="man/figures/consciousnessModelR_hex.png" align="right" width="80" alt="consciousnessModelR hex sticker" />
+
 ---
 output: github_document
 ---
