@@ -7,6 +7,7 @@ sticker](reference/figures/consciousnessModelR_hex.png)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://noushinn.github.io/consciousnessModelR/LICENSE)
 [![Website](https://img.shields.io/badge/Website-pkgdown-blue)](https://noushinn.github.io/consciousnessModelR/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20766470.svg)](https://doi.org/10.5281/zenodo.20766470)
 [![GitHub
 stars](https://img.shields.io/github/stars/NoushinN/consciousnessModelR?style=social)](https://github.com/NoushinN/consciousnessModelR)
 
@@ -132,6 +133,13 @@ This package may be useful for:
 ## License
 
 MIT License
+
+## Citation
+
+If referencing this project, please cite: Nabavi, N.
+*consciousnessModelR: An Educational R Package for Simulating Simplified
+Computational Models Inspired by Consciousness Theories*
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20766470.svg)](https://doi.org/10.5281/zenodo.20766470)
 
 # Package index
 
